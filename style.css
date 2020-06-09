@@ -1,3 +1,16 @@
+body {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+h3 {
+	font-weight: 500;
+}
+
+
 /* header */
 
 header {
@@ -26,11 +39,10 @@ img {
 
 #titre {
 	height: 350px;
-	width: 800px;
-	margin-left: 75px;
+	width: 1000px;
 }
 
-#jessica {
+#titouan {
 	color: rgb(255,215,0);
 }
 
@@ -59,10 +71,10 @@ img {
 
 .titre_gauche {
 	background-color: rgb(105,105,105);
-	height: 50px;
+	height: 38px;
 	width: 350px;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 2em;
 	color: rgb(255,215,0);
 	border-left: solid 2px rgb(128,128,128);
 	left: -2px;
@@ -70,11 +82,80 @@ img {
 
 }
 
+.loisirs {
+	flex: 1 1 auto;
+	width: 20px;
+	height: 20px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	
+}
+
+.moi {
+	margin-right: 8%;
+	margin-left: 8%;
+}
+
+.contact {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
 /* corps droit de la page */
 
-.droit {
+.partie_droite {
+	margin-left: 100px;
+}
+
+.paragraphe {
 	display: flex;
-	width: 800px;
-	float: right;
-	position: relative;
-	top: -580px;
+	flex-direction: row;
+
+}
+
+.formation {
+	margin-left: 150px;
+}
+
+.expérience {
+	margin-left: 75px;
+}
+
+h3 , h4 {
+	text-transform: uppercase;
+}
+
+.titre_droit {
+	font-size: 1.5em;
+	border-bottom: 2px solid rgb(255,215,0);
+
+}
+.logo {
+	color: rgb(255,215,0);
+	margin-right: 25px;
+}
+
+.recommandations {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-right: 400px;
+}
+
+.nom_recommandations {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#fin_page {
+	display: flex;
+}
+
+
+
+/* adaptation avec les medias queries */
+
+
+media
