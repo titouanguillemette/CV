@@ -15,7 +15,6 @@ h3 {
 
 header {
 	display: flex;
-	height: 350px;
 }
 
 
@@ -37,10 +36,6 @@ img {
 }
 
 
-#titre {
-	height: 350px;
-	width: 1000px;
-}
 
 #titouan {
 	color: rgb(255,215,0);
@@ -82,15 +77,15 @@ img {
 
 }
 
+.logo_1 {
+	display: flex;
+	justify-content: space-around;
+}
+
 .loisirs {
-	flex: 1 1 auto;
-	width: 20px;
-	height: 20px;
-	margin-left: 60px;
-	margin-bottom: 20px;
 	border: 1px solid black;
-	border-radius: 10px;
-	text-align: center;
+	border-radius: 50%;
+	font-size: 3em;
 	
 }
 
@@ -124,6 +119,10 @@ img {
 	margin-left: 75px;
 }
 
+#expérience {
+	margin-left: 27px;
+}
+
 h3 , h4 {
 	text-transform: uppercase;
 }
@@ -135,13 +134,14 @@ h3 , h4 {
 }
 .logo {
 	color: rgb(255,215,0);
-	margin-right: 25px;
+	margin-right: 75px;
 }
 
 .recommandations {
 	list-style-type: none;
-	padding-left: 0px;
-	margin-right: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .nom_recommandations {
@@ -151,11 +151,30 @@ h3 , h4 {
 
 #fin_page {
 	display: flex;
+	justify-content: space-around;
 }
 
+ul {
+	list-style-type: none;
+}
+
+.date_2::before {
+	content: "."; 
+	color:  rgb(255,215,0);
+	font-size: 5em;
+	margin-left: -21px;
+}
+
+/* adaptation pour les téléphones */
 
 
-/* adaptation avec les medias queries */
+@media all and (max-width: 1000px) {
+	body {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 
-
-media
+	#nom {
+		font-size: 3em;
+	}
+}
